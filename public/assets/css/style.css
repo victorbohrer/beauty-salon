@@ -222,7 +222,7 @@ main section .text p {
 }
 
 /* BUTTONS */
-#home .btn-template {
+.btn-template {
   background-color: #A152EF;
   border-radius: 0.25rem;
   padding: 0.93rem 2rem;
@@ -311,6 +311,65 @@ main > section#services .cards i {
   margin-bottom: 1.5rem;
   font-size: 5rem;
   color: #A152EF;
+}
+
+/* ===== TESTIMONIALS ================================*/
+#testimonials {
+  background-color: #FFF;
+}
+#testimonials .testimonials blockquote {
+  padding: 2rem;
+  box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.08);
+  border-radius: 0.25rem;
+}
+#testimonials .testimonials blockquote p {
+  margin-bottom: 1.5rem;
+}
+#testimonials .testimonials blockquote p span {
+  font: 700 3rem "serif";
+  color: #A152EF;
+}
+#testimonials .testimonials blockquote cite {
+  display: flex;
+  align-items: center;
+  font-style: normal;
+  color: #767676;
+}
+#testimonials .testimonials blockquote cite img {
+  width: 2rem;
+  clip-path: circle();
+  margin-right: 0.5rem;
+}
+
+/* ===== SWIPE SLIDES ================================*/
+.swiper-slide {
+  height: auto;
+  padding: 4rem 1rem;
+}
+
+.swiper-pagination-bullet-active {
+  background: #A152EF;
+}
+
+.swiper-pagination-bullet {
+  background: #261932;
+}
+
+/* ===== CONTACT ================================*/
+section#contact .grid {
+  gap: 4rem;
+}
+section#contact .text p {
+  margin-bottom: 2rem;
+}
+section#contact .text i {
+  font-size: 1.5rem;
+  margin-right: 0.6rem;
+}
+section#contact .links ul {
+  display: grid;
+  gap: 2rem;
+  list-style: none;
 }
 
 /*# sourceMappingURL=style.css.map */

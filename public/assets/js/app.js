@@ -27,3 +27,31 @@ window.addEventListener('scroll', function() {
     header.classList.remove('scroll')
   }
 })
+
+// TESTIMONIALS CAROUSEL SLIDER
+
+const swiper = new Swiper('.swiper-container', {
+
+  slidesPerView: 1,
+  autoplay: {
+    delay: 5000
+  },
+  pagination: {
+    el: '.swiper-pagination'
+  },
+  // mousewheel: true,
+  keyboard: true,
+
+
+})
+
+// SCROLL REVEAL
+
+const scrollReveal = ScrollReveal({
+  origin: 'top',
+  distance: '30px',
+  duration: 1300,
+  reset: true
+}) 
+
+ScrollReveal().reveal('.reveal');

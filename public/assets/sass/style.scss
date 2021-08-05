@@ -232,6 +232,7 @@ nav.show ul.grid {
   font:  700 1.85rem 'Poppins', sans-serif;
   color: $dark-purple;
   line-height: 2.81rem;
+  
 }
 
 
@@ -242,7 +243,7 @@ main section .text p {
 }
 
 /* BUTTONS */
-#home .btn-template {
+.btn-template {
   background-color: $purple;
   border-radius: 0.25rem;
   padding: 0.93rem 2rem ;
@@ -344,5 +345,86 @@ main>section#services {
       font-size: 5rem;
       color: $purple;
     }
+  }
+}
+
+/* ===== TESTIMONIALS ================================*/
+#testimonials {
+  background-color: $white;
+
+  .testimonials {
+
+    blockquote {
+      padding: 2rem;
+      box-shadow: 0px 0px 12px rgb(0,0,0,0.08);
+      border-radius: 0.25rem;
+  
+      p {
+        margin-bottom: 1.5rem;
+        
+        span {
+          font: 700 3rem 'serif';
+          color: $purple;
+        }
+      }
+  
+      cite {
+        display: flex;
+        align-items: center;
+        font-style: normal;
+        color:  #767676;
+  
+        img {
+          width: 2rem;
+          // border-radius: 50%;
+          clip-path: circle();
+          margin-right: 0.5rem;
+        }
+      }
+    }
+  }
+}
+
+/* ===== SWIPE SLIDES ================================*/
+.swiper-slide {
+  height: auto;
+  padding: 4rem 1rem;
+}
+
+.swiper-pagination-bullet-active {
+  background: $purple;
+}
+.swiper-pagination-bullet {
+  background: $dark-purple;
+}
+
+/* ===== CONTACT ================================*/
+
+section#contact {
+
+  .grid {
+    gap: 4rem;
+  }
+
+  .text {
+
+    p {
+      margin-bottom: 2rem;
+    }
+
+    i {
+      font-size: 1.5rem;
+      margin-right: 0.6rem;
+    }
+  }
+
+  .links {
+
+    ul {
+      display: grid;
+      gap: 2rem;
+      list-style: none;
+    }
+    
   }
 }

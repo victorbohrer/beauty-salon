@@ -15,6 +15,9 @@
 
     <!-- ICONS -->
     <link rel="stylesheet" href="public/assets/icons/icons.css">
+    
+        <!-- SWIPER -->
+        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 
     <!-- STYLES -->
     <link rel="stylesheet" href="public/assets/css/style.css">
@@ -39,6 +42,7 @@
       </nav>
     </header>
 
+    <!-- HOME -->
     <main>
       <section class="section" id="home">
         <div class="container grid">
@@ -46,7 +50,7 @@
             <img class="main-img" src="https://images.unsplash.com/photo-1562322140-8baeececf3df?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1650&q=80" alt="Mulher sorrindo, penteando outra mulher">
           </div>
 
-          <div class="text">
+          <div class="text reveal">
             <h2 class="title">Saúde natural para os seus cabelos</h2>
             <p>Um salão exclusivo em São Paulo, especializado em tratamentos naturais.</p>
             <a class="btn-template" href="#">Agendar um horário</a>
@@ -55,12 +59,13 @@
       </section>
       <div class="divider-1"></div>
 
+      <!-- ABOUT -->
       <section class="section" id="about">
         <div class="container grid">
           <div class="image-box">
-            <img src="https://images.unsplash.com/photo-1559599101-f09722fb4948?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80" alt="3 mulheres sorrindo" srcset="">
+            <img class="reveal" src="https://images.unsplash.com/photo-1559599101-f09722fb4948?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80" alt="3 mulheres sorrindo" srcset="">
           </div>
-          <div class="text">
+          <div class="text reveal">
             <h2 class="title">Sobre nós</h2>
 
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab deleniti vel assumenda voluptatibus nesciunt, deserunt, ipsam itaque suscipit accusamus autem cum facilis et, veritatis nobis! Quas eum inventore id unde!
@@ -76,9 +81,10 @@
       <div class="divider-1"></div>
       </section>
 
+      <!-- SERVICES -->
       <section class="section" id="services">
         <div class="container grid">
-          <header class="header">
+          <header class="header reveal">
             <h2 class="title">
               Serviços
             </h2>
@@ -88,20 +94,20 @@
             </p>
           </header>
           <div class="cards grid">
-            <div class="card">
+            <div class="card reveal">
               <i class="icon-woman-hair"></i>
               <h3 class="title">Terapia capilar</h3>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, dolor similique voluptas, voluptate excepturi cumque quia, quod harum sed ea nesciunt voluptatibus expedita rem error? Officiis libero nostrum vero reprehenderit!
               </p>
             </div>
-            <div class="card">
+            <div class="card reveal">
               <i class="icon-trim"></i>
               <h3 class="title">Cortes</h3>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, dolor similique voluptas, voluptate excepturi cumque quia, quod harum sed ea nesciunt voluptatibus expedita rem error? Officiis libero nostrum vero reprehenderit!                
               </p>
             </div>
-            <div class="card">
+            <div class="card reveal">
               <i class="icon-cosmetic"></i>
               <h3 class="title">Tratamentos</h3>
               <p>
@@ -111,8 +117,103 @@
           </div>
         </div>
       </section>
+      <div class="divider-1"></div>
     </main>
 
+    <!-- TESTIMONIALS -->
+    <section class="section" id="testimonials">
+      <div class="container">
+        <header>
+          <h2 class="title reveal">
+            Depoimentos de 
+            quem já passou 
+            por aqui
+          </h2>
+        </header>
+        <div class="testimonials swiper-container">
+
+          <div class="swiper-wrapper">
+            
+            <div class="testimonial swiper-slide">
+            <blockquote>
+              <p>
+                <span>&ldquo;</span>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum atque labore aut, incidunt aliquid, exercitationem in totam quidem modi delectus quae unde impedit! Modi blanditiis iusto expedita rem maiores porro.
+              </p>
+              <cite>
+                <img src="public/assets/img/wanessa.jpg" alt="Foto de Wanessa Souza">
+                Wanessa Souza
+              </cite>
+            </blockquote>
+            </div>
+
+            <div class="testimonial swiper-slide">
+            <blockquote>
+              <p>
+                <span>&ldquo;</span>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum atque labore aut, incidunt aliquid, exercitationem in totam quidem modi delectus quae unde impedit! Modi blanditiis iusto expedita rem maiores porro.
+              </p>
+              <cite>
+                <img src="public/assets/img/victor.jpg" alt="Avatar do Victor Bohrer">
+                Victor Bohrer
+              </cite>
+            </blockquote>
+            </div>
+
+            <div class="testimonial swiper-slide">
+            <blockquote>
+              <p>
+                <span>&ldquo;</span>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum atque labore aut, incidunt aliquid, exercitationem in totam quidem modi delectus quae unde impedit! Modi blanditiis iusto expedita rem maiores porro.
+              </p>
+              <cite>
+                <img src="public/assets/img/carlos.jpg" alt="Foto de Carlos Silva">
+                Carlos Silva
+              </cite>
+            </blockquote>
+            </div>
+
+          </div>
+
+          <!-- If we need pagination -->
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </section>
+    <div class="divider-1"></div>
+
+    <!-- CONTACT -->
+    <section class="section" id="contact">
+      <div class="container grid">
+        <div class="text reveal">
+          <h2 class="title">
+            Entre em contato
+            com a gente!
+          </h2>
+
+          <p>
+            Entre em contato com a Beautysalon, queremos tirar suas dúvidas, ouvir suas críticas e sugestões.
+          </p>
+          <a class="btn-template" href="https://wa.link/53be66" target="_blank"><i class="icon-whatsapp"></i>Entrar em contato</a>
+        </div>
+
+        <div class="links">
+          <ul>
+            <li>Contato: 11 99845-6754</li>
+            <li>Endereço: R. Amauri Souza, 346</li>
+            <li>Email: contato@beautysalon.com</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- SWIPER -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- SCROLL REVEAL -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!-- MAIN -->
     <script src="public/assets/js/app.js"></script>
   </body>
 </html>
